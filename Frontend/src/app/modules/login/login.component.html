@@ -1,0 +1,55 @@
+<div class="row main-conatiner">
+  <div class="col-7 background-image">
+    <div class="content-sec-right">
+      <img
+        src="../../../assets/icon.png"
+        class="img-fluid login-icon"
+        alt="Responsive image"
+        width="50px"
+      />
+      <p class="login-content">Experience Seamless Stock Search Here</p>
+
+      <span class="login-sub-content">Kanini Ticker Platform</span>
+    </div>
+  </div>
+  <div class="col-5 container">
+    <img
+      src="../../../assets/logo.png"
+      class="img-fluid rounded"
+      alt="Responsive image"
+    />
+
+    <div class="content-section">
+      <h2>Sign In</h2>
+      <span>Welcome back! Please enter email id and password</span>
+    </div>
+
+    <div>
+      <form [formGroup]="loginForm" (ngSubmit)="login()">
+        <div class="mb-4">
+          <label for="exampleInputEmail1" class="form-label"
+            >Email Id</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            formControlName="email"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+            formControlName="password"
+          />
+        </div>
+
+        <button type="submit" class="btn btn-primary login-btn mt-10">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
